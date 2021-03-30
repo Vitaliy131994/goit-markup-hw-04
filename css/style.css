@@ -1,0 +1,375 @@
+:root {
+  --white-text: rgba(255, 255, 255, 1);
+  --blue-text: rgba(33, 150, 243, 1);
+  --black-text: rgba(33, 33, 33, 1);
+  --grey-text: rgba(117, 117, 117, 1);
+  --grey-text-op60: rgba(255, 255, 255, 0.6);
+  --back-header: rgba(229, 229, 229, 1);
+  --back-zakaz: rgba(47, 48, 58, 1);
+  --back-blue: rgba(33, 150, 243, 1);
+  --back-comanda-prod: rgba(245, 244, 250, 1);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+header,
+section,
+footer {
+  border: 1px solid blue;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+ul,
+p {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* outline: 1px solid tomato; */
+}
+
+.header {
+  background: var(--white-text);
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 24px 0 25px 0;
+}
+
+.nav-item-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--black-text);
+  margin-right: 50px;
+}
+
+.contacts-item-grey {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--grey-text);
+}
+
+.contacts-item:first-child {
+  margin-right: 50px;
+}
+
+.hero {
+  background: var(--back-zakaz);
+  max-width: 1600px;
+  color: var(--white-text);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 200px 0 200px 0;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background: var(--back-blue);
+  color: var(--white-text);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  box-shadow: 0px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+}
+
+.nav-logo {
+  color: var(--black-text);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.text-blue {
+  color: var(--blue-text);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.nav {
+  text-decoration: none;
+  color: var(--black-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.nav-list,
+.contacts-list {
+  display: flex;
+}
+
+.nav-item-link:hover,
+.nav-item-link:focus,
+.contacts-item-grey:hover,
+.contacts-item-grey:focus {
+  color: var(--blue-text);
+}
+
+.contacts-list {
+  text-decoration: none;
+  color: var(--grey-text);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.about {
+  padding: 95px 0 94px 0;
+}
+
+.about-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-item {
+  margin-right: 30px;
+}
+
+.about-item:last-child {
+  margin-right: 0px;
+}
+
+.about-title {
+  margin-bottom: 10px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.about-text {
+  font-weight: 400;
+  color: var(--grey-text);
+  font-size: 14px;
+  line-height: 1.7;
+  width: 270px;
+  text-align: left;
+  margin: 0;
+}
+
+.doing {
+  padding: 94px 0 94px 0;
+}
+
+.doing-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doing-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team {
+  background: var(--back-comanda-prod);
+  padding: 94px 0 94px 0;
+}
+
+.team-text {
+  font-weight: 400;
+  color: var(--grey-text);
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.team-image {
+  margin-bottom: 10px;
+}
+
+.team-title-worker {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  margin-bottom: 10px;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  margin-top: 20px;
+}
+
+.portfolio-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  margin-top: 4px;
+  padding-bottom: 20px;
+}
+
+.portfolio-list-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0 56px 0;
+}
+
+.portfolio-item-btn {
+  margin-right: 30px;
+}
+
+.portfolio-item-btn:last-child {
+  margin-right: 0px;
+}
+
+.portfolio-item-btn:hover,
+.portfolio-item-btn:focus,
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+  color: var(--white-text);
+  background: var(--back-blue);
+}
+
+.portfolio-btn {
+  height: 38px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-decoration: none;
+  color: var(--black-text);
+  background: rgba(245, 244, 250, 1);
+  border-radius: 4px;
+  border: none;
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-item {
+  margin-right: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-child(n + 7) {
+  margin-bottom: 94px;
+}
+
+.footer {
+  background: var(--back-zakaz);
+  padding: 60px 0 60px 0;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-logo-footer {
+  color: var(--white-text);
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.text-blue {
+  color: var(--blue-text);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.footer-adress {
+  color: var(--white-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 9px;
+}
+
+.footer-mail {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--grey-text);
+  margin-bottom: 9px;
+}
+
+.footer-tel {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--grey-text);
+}
