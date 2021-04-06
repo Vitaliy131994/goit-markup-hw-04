@@ -81,13 +81,18 @@ h3 {
 }
 
 .hero {
-  background: var(--back-zakaz);
+  /* background: var(--back-zakaz); */
   max-width: 1600px;
   color: var(--white-text);
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   padding: 200px 0 200px 0;
+  background-image: url(../images/img-hero.jpg);
+  background-color: rgba(47, 48, 58, 0.4);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -372,4 +377,33 @@ h3 {
   font-size: 14px;
   line-height: 1.17;
   color: var(--grey-text);
+}
+
+.nav-icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.nav-icon-smartphone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.nav-icon-smartphone {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.contacts-item:hover,
+.contacts-item:focus {
+  fill: var(--blue-text);
+}
+
+.contacts-item-grey {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
 }
